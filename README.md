@@ -41,6 +41,7 @@ This project uses pre-trained models hosted on Hugging Face Hub:
 voice-sentiment-project/
 ├── requirements.txt           # Dependencies
 ├── voice_sentiment.py         # Core analyzer class
+├── api.py                     # REST API Server
 ├── app.py                     # Gradio web interface  
 ├── main.py                    # CLI interface
 ├── utils.py                   # Utility functions and CSS styling
