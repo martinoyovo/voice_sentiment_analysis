@@ -4,6 +4,25 @@
   <img src="gradio_interface.jpg" alt="Voice Sentiment Analysis Banner" width="100%">
 </div>
 
+## Project Description
+
+This **Voice Sentiment Analysis System** is an automated solution for analyzing customer satisfaction from voice calls. Built using state-of-the-art machine learning models, it combines **Wav2Vec 2.0** for speech-to-text transcription with **BERT** for sentiment analysis to provide real-time insights into customer emotions and satisfaction levels.
+
+### Key Features
+- **Automatic Speech Recognition**: Convert voice calls to text using Wav2Vec 2.0
+- **Sentiment Analysis**: Analyze emotional tone using multilingual BERT
+- **Customer Satisfaction Classification**: Categorize calls as Satisfied, Dissatisfied, or Neutral
+- **Batch Processing**: Handle multiple audio files simultaneously
+- **Web Interface**: User-friendly Gradio interface for easy interaction
+- **CSV Export**: Detailed results export for further analysis and reporting
+
+### Use Cases
+- **Customer Service Quality Monitoring**
+- **Call Center Performance Analysis**
+- **Customer Feedback Assessment**
+- **Business Intelligence and Reporting**
+- **Automated Quality Assurance**
+
 ## Quick Installation
 
 ```bash
@@ -118,7 +137,6 @@ When using batch analysis (multiple files), the system automatically generates a
 
 **File**: `analysis_results.csv`
 **Location**: Same folder as the project
-**Format**: Standard CSV
 
 ### **CSV Contents**
 ```csv
