@@ -44,7 +44,7 @@ voice-sentiment-project/
 ├── app.py                     # Gradio web interface  
 ├── main.py                    # CLI interface
 ├── utils.py                   # Utility functions and CSS styling
-├── calls/                     # Your audio files
+├── audios/                     # Your audio files
 │   ├── call1.wav
 │   ├── call2.mp3
 │   └── ...
@@ -93,7 +93,7 @@ result = analyzer.analyze_call("call1.wav")
 print(result)
 
 # Analyze multiple calls
-results = analyzer.analyze_batch("calls/")
+results = analyzer.analyze_batch("audios/")
 ```
 
 ## Example Output
