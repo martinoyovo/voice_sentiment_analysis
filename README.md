@@ -134,7 +134,7 @@ Perfect for analyzing customer call sentiment quickly and easily!
 - Extremely low quality or heavily distorted audio
 - Files with encryption or DRM protection
 
-### 💡 **Audio Quality Tips**
+### **Audio Quality Tips**
 - Use WAV format for highest accuracy
 - Ensure clear speech recording
 - Minimize background noise
