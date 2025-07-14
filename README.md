@@ -34,11 +34,6 @@ This project uses pre-trained models hosted on Hugging Face Hub:
 - **Description:** Multilingual BERT model fine-tuned for sentiment analysis (1-5 stars)
 - **Use:** Text sentiment classification
 
-## Quick Installation
-
-```bash
-pip install -r requirements.txt
-```
 
 ## Project Structure
 
@@ -62,6 +57,12 @@ This system is currently configured with an English-only Wav2Vec 2.0 model (`fac
 
 ### For Other Languages
 To use this system with other languages, you need to change the Wav2Vec 2.0 model in `voice_sentiment.py`.
+
+## Quick Installation
+
+```bash
+pip install -r requirements.txt
+```
 
 ## Usage
 
