@@ -13,7 +13,7 @@ This project is an automated solution for analyzing customer satisfaction from v
 - **Sentiment Analysis**: Analyze emotional tone using multilingual BERT
 - **Customer Satisfaction Classification**: Categorize calls as Satisfied, Dissatisfied, or Neutral
 - **Batch Processing**: Handle multiple audio files simultaneously
-- **Web Interface**: User-friendly [https://www.gradio.app/](Gradio) interface for easy interaction
+- **Web Interface**: User-friendly [Gradio](https://www.gradio.app/) interface for easy interaction
 - **CSV Export**: Detailed results export for further analysis and reporting
 
 ## Models Used
