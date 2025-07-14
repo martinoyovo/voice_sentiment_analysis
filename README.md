@@ -147,6 +147,7 @@ Perfect for analyzing customer call sentiment quickly and easily!
 When using batch analysis (multiple files), the system automatically generates a detailed CSV file with all results.
 
 **File**: `analysis_results.csv`
+
 **Location**: Same folder as the project
 
 ### **CSV Contents**
