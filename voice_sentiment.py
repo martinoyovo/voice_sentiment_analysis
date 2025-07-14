@@ -33,7 +33,7 @@ class VoiceSentimentAnalyzer:
         print("Models loaded!")
     
     def audio_to_text(self, audio_path):
-        """Step 1: Convert audio to text"""
+        """Convert audio to text"""
         # Load and preprocess audio
         audio, sr = librosa.load(audio_path, sr=16000)
         
@@ -49,7 +49,7 @@ class VoiceSentimentAnalyzer:
         return transcription.strip()
     
     def text_to_sentiment(self, text):
-        """Step 2: Analyze sentiment of the text"""
+        """Analyze sentiment of the text"""
         if not text:
             return {"sentiment": "NEUTRAL", "score": 0.0}
         
@@ -70,7 +70,7 @@ class VoiceSentimentAnalyzer:
         }
     
     def classify_satisfaction(self, sentiment, score):
-        """Step 3: Classify customer satisfaction"""
+        """Classify customer satisfaction"""
         if sentiment == "POSITIVE" and score > 0.7:
             return "Satisfied"
         elif sentiment == "NEGATIVE" and score > 0.7:

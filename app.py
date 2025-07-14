@@ -66,6 +66,19 @@ def analyze_batch_files(files):
         
         # Create DataFrame for display
         df = pd.DataFrame(results)
+        csv_filename = "analysis_results.csv"
+
+        print(f"Saving {len(df)} rows to CSV...")
+        df.to_csv(csv_filename, index=False)
+        print(f"CSV saved successfully")  # 
+
+        # Verify CSV was created and has content
+        if os.path.exists(csv_filename):  # ← NEW DEBUG BLOCK
+            file_size = os.path.getsize(csv_filename)
+            print(f"CSV file exists, size: {file_size} bytes")
+        else:
+            print("CSV file was not created!")
+
         
         # Statistics
         total = len(results)

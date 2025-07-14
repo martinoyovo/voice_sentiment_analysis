@@ -25,6 +25,13 @@ voice-sentiment-project/
 │   └── ...
 └── analysis_results.csv       # Generated results
 ```
+## Language Support
+
+### Current Model: English Only
+This system is currently configured with an English-only Wav2Vec 2.0 model (`facebook/wav2vec2-large-960h-lv60-self`) for optimal English speech recognition performance.
+
+### For Other Languages
+To use this system with other languages, you need to change the Wav2Vec 2.0 model in `voice_sentiment.py`:
 
 ## Usage
 
@@ -70,6 +77,14 @@ results = analyzer.analyze_batch("calls/")
 }
 ```
 
+## Simple Workflow
+
+```
+Audio File → Transcription (Wav2Vec2) → Sentiment (BERT) → Classification
+```
+
+Perfect for analyzing customer call sentiment quickly and easily!
+
 ## Supported Audio Formats
 
 ### **Fully Supported**
@@ -96,10 +111,19 @@ results = analyzer.analyze_batch("calls/")
 - Optimal recording: 16kHz, 16-bit, mono
 - Test with short samples first
 
-## Simple Workflow
+## CSV Output & Results
 
-```
-Audio File → Transcription (Wav2Vec2) → Sentiment (BERT) → Classification
-```
+### **Automatic CSV Generation**
+When using batch analysis (multiple files), the system automatically generates a detailed CSV file with all results.
 
-Perfect for analyzing customer call sentiment quickly and easily!
+**File**: `analysis_results.csv`
+**Location**: Same folder as the project
+**Format**: Standard CSV
+
+### **CSV Contents**
+```csv
+File,Transcription,Sentiment,Score,Satisfaction
+call1.wav,"Hello I am very satisfied with your service",POSITIVE,0.89,Satisfied
+call2.wav,"This is unacceptable I want a refund",NEGATIVE,0.92,Dissatisfied
+call3.wav,"Can you tell me about your pricing",NEUTRAL,0.65,Neutral
+```
