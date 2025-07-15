@@ -16,6 +16,14 @@ This project is an automated solution for analyzing customer satisfaction from v
 - **Web Interface**: User-friendly [Gradio](https://www.gradio.app/) interface for easy interaction
 - **CSV Export**: Detailed results export for further analysis and reporting
 
+## Live Deployments
+
+### REST API (Render)
+**Production API Endpoint:** https://voice-sentiment-analysis-0eh4.onrender.com
+
+### Live Demo on Hugging Face powered By Gradio
+**Interactive Demo:** https://huggingface.co/spaces/martinoyovo/voice-sentiment-analysis
+
 ## Models Used
 
 This project uses pre-trained models hosted on Hugging Face Hub:
