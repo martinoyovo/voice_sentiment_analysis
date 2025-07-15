@@ -8,6 +8,13 @@
 
 This project is an automated solution for analyzing customer satisfaction from voice calls. Built using state-of-the-art machine learning models, it combines **Wav2Vec 2.0** for speech-to-text transcription with **BERT** for sentiment analysis to provide real-time feedback into customer emotions and satisfaction levels.
 
+### Main Use Cases
+- **Customer Service & Call Centers**
+- **Business Intelligence & Analytics**
+- **Financial Services**
+- **Sales & E-commerce**
+- **Healthcare & Telemedicine**
+
 ### Key Features
 - **Automatic Speech Recognition**: Convert voice calls to text using Wav2Vec 2.0
 - **Sentiment Analysis**: Analyze emotional tone using multilingual BERT
