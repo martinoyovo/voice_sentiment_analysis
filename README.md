@@ -8,13 +8,6 @@
 
 This project is an automated solution for analyzing customer satisfaction from voice calls. Built using state-of-the-art machine learning models, it combines **Wav2Vec 2.0** for speech-to-text transcription with **BERT** for sentiment analysis to provide real-time feedback into customer emotions and satisfaction levels.
 
-### Main Use Cases
-- **Customer Service & Call Centers**
-- **Business Intelligence & Analytics**
-- **Financial Services**
-- **Sales & E-commerce**
-- **Healthcare & Telemedicine**
-
 ### Key Features
 - **Automatic Speech Recognition**: Convert voice calls to text using Wav2Vec 2.0
 - **Sentiment Analysis**: Analyze emotional tone using multilingual BERT
@@ -30,25 +23,6 @@ This project is an automated solution for analyzing customer satisfaction from v
 
 ### Live Demo on Hugging Face powered By Gradio
 **Interactive Demo:** https://huggingface.co/spaces/martinoyovo/voice-sentiment-analysis
-
-## Models Used
-
-This project uses pre-trained models hosted on Hugging Face Hub:
-
-### Speech Recognition Model
-**Wav2Vec 2.0 - English**
-- **Model:** `facebook/wav2vec2-large-960h-lv60-self`
-- **Link:** [https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self](https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self)
-- **Description:** Large Wav2Vec 2.0 model trained on 960 hours of English LibriSpeech data
-- **Use:** Audio-to-text transcription
-
-### Sentiment Analysis Model
-**BERT - Multilingual Sentiment**
-- **Model:** `nlptown/bert-base-multilingual-uncased-sentiment`
-- **Link:** [https://huggingface.co/nlptown/bert-base-multilingual-uncased-sentiment](https://huggingface.co/nlptown/bert-base-multilingual-uncased-sentiment)
-- **Description:** Multilingual BERT model fine-tuned for sentiment analysis (1-5 stars)
-- **Use:** Text sentiment classification
-
 
 ## Project Structure
 
@@ -66,13 +40,6 @@ voice-sentiment-project/
 │   └── ...
 └── analysis_results.csv       # Generated results
 ```
-## Language Support
-
-### Current Model: English Only
-This system is currently configured with an English-only Wav2Vec 2.0 model (`facebook/wav2vec2-large-960h-lv60-self`) for optimal English speech recognition performance.
-
-### For Other Languages
-To use this system with other languages, you need to change the Wav2Vec 2.0 model in `voice_sentiment.py`.
 
 ## Quick Installation
 
@@ -131,6 +98,39 @@ Audio File → Transcription (Wav2Vec2) → Sentiment (BERT) → Classification
 ```
 
 Perfect for analyzing customer call sentiment quickly and easily!
+
+## Main Use Cases
+- **Customer Service & Call Centers**
+- **Business Intelligence & Analytics**
+- **Financial Services**
+- **Sales & E-commerce**
+- **Healthcare & Telemedicine**
+
+## Models Used
+
+This project uses pre-trained models hosted on Hugging Face Hub:
+
+### Speech Recognition Model
+**Wav2Vec 2.0 - English**
+- **Model:** `facebook/wav2vec2-large-960h-lv60-self`
+- **Link:** [https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self](https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self)
+- **Description:** Large Wav2Vec 2.0 model trained on 960 hours of English LibriSpeech data
+- **Use:** Audio-to-text transcription
+
+### Sentiment Analysis Model
+**BERT - Multilingual Sentiment**
+- **Model:** `nlptown/bert-base-multilingual-uncased-sentiment`
+- **Link:** [https://huggingface.co/nlptown/bert-base-multilingual-uncased-sentiment](https://huggingface.co/nlptown/bert-base-multilingual-uncased-sentiment)
+- **Description:** Multilingual BERT model fine-tuned for sentiment analysis (1-5 stars)
+- **Use:** Text sentiment classification
+
+## Language Support
+
+### Current Model: English Only
+This system is currently configured with an English-only Wav2Vec 2.0 model (`facebook/wav2vec2-large-960h-lv60-self`) for optimal English speech recognition performance.
+
+### For Other Languages
+To use this system with other languages, you need to change the Wav2Vec 2.0 model in `voice_sentiment.py`.
 
 ## Supported Audio Formats
 
